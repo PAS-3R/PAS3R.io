@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">PAS3R: Pose-Adaptive Streaming 3D Reconstruction for Long Video Sequences</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Lanbo Xu</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Liang Guo</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Caigui Jiang</a><sup>1</sup><sup>*</sup>,</span>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Cheng Wang</a><sup>2</sup><sup>*</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                        <sup>1</sup>State Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University, China<br>
+                        <sup>2</sup>University of East Anglia, Norwich, NR47TJ, United Kingdom<br>
+                    </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- TODO: Replace with your teaser video -->
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <!-- TODO: Add your video file path here -->
+        <source src="static/videos/PAS3R.mp4" type="video/mp4">
+      </video>
+      <!-- TODO: Replace with your video description -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Our method overview</h2>
+      <img src="static/images/pipeline.svg" alt="PAS3R Pipeline" style="width: 100%; height: auto;">
+      
+      <h2 class="subtitle has-text-justified" style="margin-top: 15px; font-size: 1.1rem;">
+        <b>We enhance the robustness and long-sequence reconstruction capability of the model via three key components: Pose-Adaptive State Update Modulation, Trajectory-Consistent Model Optimization, and Online Spatiotemporal Stabilization, respectively.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Online monocular 3D reconstruction enables dense scene recovery from streaming video but remains fundamentally limited by the stability–adaptation dilemma: the reconstruction model must rapidly incorporate novel viewpoints while preserving previously accumulated scene structure. Existing streaming approaches rely on uniform or attention-based update mechanisms that often fail to account for abrupt viewpoint transitions, leading to trajectory drift and geometric inconsistencies over long sequences.
+We introduce PAS3R, a pose-adaptive streaming reconstruction framework that dynamically modulates state updates according to camera motion and scene structure. Our key insight is that frames contributing significant geometric novelty should exert stronger influence on the reconstruction state, while frames with minor viewpoint variation should prioritize preserving historical context. PAS3R operationalizes this principle through a motion-aware update mechanism that jointly leverages inter-frame pose variation and image frequency cues to estimate frame importance.
+To further stabilize long-horizon reconstruction, we introduce trajectory-consistent training objectives that incorporate relative pose constraints and acceleration regularization. A lightweight online stabilization module further suppresses high-frequency trajectory jitter and geometric artifacts without increasing memory consumption.
+Extensive experiments across multiple benchmarks demonstrate that PAS3R significantly improves trajectory accuracy, depth estimation, and point cloud reconstruction quality in long video sequences while maintaining competitive performance on shorter sequences. Code will be made publicly available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+<section class="hero show">
+  <div class="container is-small">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Evaluation results</h2>
+      <div class="columns is-gapless is-centered is-vcentered" style="display: flex; gap: 0px; justify-content: center;">
+        
+        <div class="column" style="padding: 0; margin: 0; line-height: 0;">
+          <video class="video-teaser" autoplay muted loop playsinline preload="metadata" style="width: 100%; height: auto; object-fit: cover; display: block;">
+            <source src="static/videos/Graph1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column" style="padding: 0; margin: 0; line-height: 0;">
+          <video class="video-teaser" autoplay muted loop playsinline preload="metadata" style="width: 100%; height: auto; object-fit: cover; display: block;">
+            <source src="static/videos/Graph2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column" style="padding: 0; margin: 0; line-height: 0;">
+          <video class="video-teaser" autoplay muted loop playsinline preload="metadata" style="width: 100%; height: auto; object-fit: cover; display: block;">
+            <source src="static/videos/Graph3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+      <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+        <strong>Comparison of Online methods.</strong> From left to right, the panels show point cloud reconstruction error comparison, camera pose error comparison, and depth error comparison, respectively. Compared with other state-of-the-art online 3D reconstruction methods, PAS3R achieves the best performance across all three evaluation tasks.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Long sequences</h2>
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 1000px; margin: 0 auto;">
+        <div class="item item-video1" style="margin-bottom: 12px;">
+          <video id="video1" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+            <source src="static/videos/outdoor.mp4" type="video/mp4">
+          </video>
+          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Outdoor</p>
+        </div>
+        <div class="item item-video2" style="margin-bottom: 12px;">
+          <video id="video2" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+            <source src="static/videos/xjtuo.mp4" type="video/mp4">
+          </video>
+          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Outdoor corridor</p>
+        </div>
+        <div class="item item-video3" style="margin-bottom: 12px;">
+          <video id="video3" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+            <source src="static/videos/computer.mp4" type="video/mp4">
+          </video>
+          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Computer Room</p>
+        </div>
+        <div class="item item-video4" style="margin-bottom: 12px;">
+          <video id="video4" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+            <source src="static/videos/bathroom.mp4" type="video/mp4">
+          </video>
+          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Bathroom Scene</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+      PAS3R's depth prediction and reconstruction on long sequences (647-1000 frames).
+    </h2>
+  </div>
+</section>
+<!-- End video carousel -->
+ 
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/PLYLoader.js"></script>
+
+<style>
+  /* 场景切换按钮容器 */
+  .scene-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .scene-btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .scene-btn.is-active {
+    background-color: #3273dc; /* Bulma 蓝色 */
+    color: white;
+    border-color: #3273dc;
+  }
+
+  /* 场景内容容器 */
+  .scene-content {
+    display: none; /* 默认隐藏所有场景 */
+  }
+  .scene-content.is-active {
+    display: block; /* 只有激活的场景才显示 */
+  }
+
+  /* 3D 模型容器的固定高度 */
+  .ply-viewer {
+    width: 100%;
+    height: 250px; /* 模型窗口的高度，可自调 */
+    background-color: #e0e0e0; /* 加载时的背景色 */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: grab;
+  }
+  .ply-viewer canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+  .ply-viewer:active {
+    cursor: grabbing;
+  }
+</style>
+
+<section class="hero is-light is-small" style="padding: 2rem 0;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">3D reconstruction on short sequences</h2>
+    
+    <div class="scene-tabs">
+      <button class="scene-btn is-active" onclick="switchScene(1)">Whiteroom</button>
+      <button class="scene-btn" onclick="switchScene(2)">Apartment</button>
+      <button class="scene-btn" onclick="switchScene(3)">Office</button>
+      <button class="scene-btn" onclick="switchScene(4)">Redkitchen</button>
+    </div>
+
+    <div id="scene-1" class="scene-content is-active">
+      <div class="columns is-centered is-vcentered">
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5 mb-10">Input Image</h3>
+          <img src="static/images/whiteroom.png" style="height: 245px; object-fit: contain; border-radius: 8px;">
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">Ground Truth</h3>
+          <div class="ply-viewer" id="viewer-gt-1" data-ply="static/models/whiteroom-gt.ply"></div>
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">PAS3R</h3>
+          <div class="ply-viewer" id="viewer-pred-1" data-ply="static/models/whiteroom-mask.ply"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scene-2" class="scene-content">
+      <div class="columns is-centered is-vcentered">
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5 mb-10">Input Image</h3>
+          <img src="static/images/morning_apartment.png" style="height: 245px; object-fit: contain; border-radius: 8px;">
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">Ground Truth</h3>
+          <div class="ply-viewer" id="viewer-gt-2" data-ply="static/models/morning_apartment-gt.ply"></div>
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">PAS3R</h3>
+          <div class="ply-viewer" id="viewer-pred-2" data-ply="static/models/morning_apartment-mask.ply"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scene-3" class="scene-content">
+      <div class="columns is-centered is-vcentered">
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5 mb-10">Input Image</h3>
+          <img src="static/images/office.png" style="height: 245px; object-fit: contain; border-radius: 8px;">
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">Ground Truth</h3>
+          <div class="ply-viewer" id="viewer-gt-3" data-ply="static/models/office_seq-07-gt.ply"></div>
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">PAS3R</h3>
+          <div class="ply-viewer" id="viewer-pred-3" data-ply="static/models/office_seq-07-mask.ply"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scene-4" class="scene-content">
+      <div class="columns is-centered is-vcentered">
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5 mb-10">Input Image</h3>
+          <img src="static/images/kitchen.png" style="height: 245px; object-fit: contain; border-radius: 8px;">
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">Ground Truth</h3>
+          <div class="ply-viewer" id="viewer-gt-4" data-ply="static/models/redkitchen_seq-12-gt.ply"></div>
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="subtitle is-5">PAS3R</h3>
+          <div class="ply-viewer" id="viewer-pred-4" data-ply="static/models/redkitchen_seq-12-mask.ply"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // 1. 按钮切换逻辑
+  function switchScene(sceneId) {
+    // 隐藏所有场景内容，取消所有按钮的激活状态
+    document.querySelectorAll('.scene-content').forEach(el => el.classList.remove('is-active'));
+    document.querySelectorAll('.scene-btn').forEach(el => el.classList.remove('is-active'));
+    
+    // 激活选中的场景和按钮
+    document.getElementById(`scene-${sceneId}`).classList.add('is-active');
+    document.querySelectorAll('.scene-btn')[sceneId - 1].classList.add('is-active');
+    
+    // 如果想要优化性能，可以只在切换到该场景时才加载对应的 3D 模型
+    // loadPLYModelsForScene(sceneId);
+  }
+
+  // 2. Three.js 加载 PLY 文件的核心引擎
+  function initPLYViewer(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const plyPath = container.getAttribute('data-ply');
+    if (!plyPath) return;
+
+    // 创建场景、相机和渲染器
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xf0f0f0); // 模型背景色
+
+    const camera = new THREE.PerspectiveCamera(35, container.clientWidth / container.clientHeight, 0.1, 1000);
+    camera.position.set(0, 0, 3); // 相机初始位置
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    container.appendChild(renderer.domElement);
+    // 强制让渲染器在初始化后立即适配容器大小
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+    
+    // 添加鼠标控制 (类似 MeshLab 的拖拽旋转)
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true; 
+    controls.dampingFactor = 0.05;
+
+    // 添加光照 (非常重要，否则模型是纯黑的)
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+    dirLight.position.set(10, 20, 10);
+    scene.add(dirLight);
+
+    // 加载 PLY 文件
+    const loader = new THREE.PLYLoader();
+    loader.load(plyPath, function (geometry) {
+        geometry.computeVertexNormals();
+
+        // 1. 强制使用点云材质 (PointsMaterial)
+        // 只有这个材质，修改 size 才会生效
+        const material = new THREE.PointsMaterial({ 
+            size: 0.01,           // <--- 在这里调整大小，现在肯定有变化了！
+            vertexColors: true,   // 开启 PLY 自带颜色
+            sizeAttenuation: true // 开启远小近大效果
+        });
+
+        // 2. 关键修改：强制使用 THREE.Points 而不是 THREE.Mesh
+        // 即使你的 PLY 含有面信息，这行代码也会把它当成纯点云渲染
+        const visualObject = new THREE.Points(geometry, material);
+        
+        // 3. 自动居中和缩放逻辑
+        geometry.computeBoundingBox();
+        const center = geometry.boundingBox.getCenter(new THREE.Vector3());
+        visualObject.position.sub(center);
+        
+        const size = geometry.boundingBox.getSize(new THREE.Vector3());
+        const maxDim = Math.max(size.x, size.y, size.z);
+        const scale = 1.5 / maxDim;
+        visualObject.scale.set(scale, scale, scale);
+
+        // 将物体添加到场景
+        scene.add(visualObject);
+    });
+    // 动画循环
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // 响应窗口缩放
+  // --- 替换原有的 window.addEventListener('resize', ...) 部分 ---
+
+    // 创建一个观察器，自动监听容器大小变化
+    const resizeObserver = new ResizeObserver(() => {
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      // 重新设置渲染器大小
+      renderer.setSize(width, height);
+      
+      // 重新设置相机比例
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      
+      // 强制渲染一帧，防止出现黑屏或灰色边缘
+      renderer.render(scene, camera);
+    });
+
+    // 开始观察这个容器
+    resizeObserver.observe(container);
+
+    // 动画循环保持不变
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+  }
+
+  // 页面加载完成后，初始化所有的 3D 浏览器
+  window.addEventListener('load', () => {
+    // 这里我们初始化场景 1 和 2 的四个窗口作为演示
+    // 实际使用时，请初始化你所有的 ID
+    initPLYViewer('viewer-gt-1');
+    initPLYViewer('viewer-pred-1');
+    initPLYViewer('viewer-gt-2');
+    initPLYViewer('viewer-pred-2');
+    initPLYViewer('viewer-gt-3');
+    initPLYViewer('viewer-pred-3');
+    initPLYViewer('viewer-gt-4');
+    initPLYViewer('viewer-pred-4');
+  });
+</script>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
+  title={Your Paper Title Here},
+  author={First Author and Second Author and Third Author},
+  journal={Conference/Journal Name},
+  year={2024},
+  url={https://your-domain.com/your-project-page}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
