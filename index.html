@@ -191,13 +191,13 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Lanbo Xu</a><sup>1</sup>,</span>
+                <a href="https://caiguijiang.github.io/authors/lanboxu/" target="_blank">Lanbo Xu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Liang Guo</a><sup>1</sup>,</span>
+                  <a href="https://caiguijiang.github.io/authors/liangguo/" target="_blank">Liang Guo</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Caigui Jiang</a><sup>1</sup><sup>*</sup>,</span>
+                    <a href="https://gr.xjtu.edu.cn/en/web/jiang" target="_blank">Caigui Jiang</a><sup>1</sup><sup>*</sup>,</span>
                     <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Cheng Wang</a><sup>2</sup><sup>*</sup>,</span>
+                      <a href="https://chengwang12.github.io" target="_blank">Cheng Wang</a><sup>2</sup><sup>*</sup>,</span>
                   </span>
                   </div>
 
@@ -209,39 +209,15 @@
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                  </a>
+                  </a> -->
                 </span>
 
                 <!-- TODO: Update with your arXiv paper ID -->
@@ -347,44 +323,158 @@ Extensive experiments across multiple benchmarks demonstrate that PAS3R signific
   </div>
 </section>
 
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Long sequences</h2>
-      <div id="results-carousel" class="carousel results-carousel" style="max-width: 1000px; margin: 0 auto;">
-        <div class="item item-video1" style="margin-bottom: 12px;">
-          <video id="video1" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+      
+      <div id="custom-video-carousel" class="carousel-container">
+        
+        <div class="carousel-item active">
+          <video class="carousel-video" controls muted preload="metadata">
             <source src="static/videos/outdoor.mp4" type="video/mp4">
           </video>
-          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Outdoor</p>
+          <p class="carousel-caption">Outdoor</p>
         </div>
-        <div class="item item-video2" style="margin-bottom: 12px;">
-          <video id="video2" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+        
+        <div class="carousel-item">
+          <video class="carousel-video" controls muted preload="metadata">
             <source src="static/videos/xjtuo.mp4" type="video/mp4">
           </video>
-          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Outdoor corridor</p>
+          <p class="carousel-caption">Outdoor corridor</p>
         </div>
-        <div class="item item-video3" style="margin-bottom: 12px;">
-          <video id="video3" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+        
+        <div class="carousel-item">
+          <video class="carousel-video" controls muted preload="metadata">
             <source src="static/videos/computer.mp4" type="video/mp4">
           </video>
-          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Computer Room</p>
+          <p class="carousel-caption">Computer Room</p>
         </div>
-        <div class="item item-video4" style="margin-bottom: 12px;">
-          <video id="video4" controls muted loop style="width: 100%; height: auto; max-height: 600px;" preload="metadata">
+        
+        <div class="carousel-item">
+          <video class="carousel-video" controls muted preload="metadata">
             <source src="static/videos/bathroom.mp4" type="video/mp4">
           </video>
-          <p style="margin-top: 8px; font-size: 14px; color: #4a4a4a; line-height: 1.5;">Bathroom Scene</p>
+          <p class="carousel-caption">Bathroom Scene</p>
         </div>
+
+        <button class="carousel-btn prev" onclick="switchVideo(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="switchVideo(1)">&#10095;</button>
       </div>
+
+      <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+        PAS3R's depth prediction and reconstruction on long sequences (647-1000 frames).
+      </h2>
     </div>
-    <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
-      PAS3R's depth prediction and reconstruction on long sequences (647-1000 frames).
-    </h2>
   </div>
 </section>
-<!-- End video carousel -->
+<style>
+  .carousel-container {
+    max-width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* 让视频边角更圆润 */
+    background: #000; /* 视频切换时的背景色 */
+  }
+
+  .carousel-item {
+    display: none; /* 默认隐藏所有视频 */
+    text-align: center;
+    width: 100%;
+  }
+
+  .carousel-item.active {
+    display: block; /* 只显示 active 状态的视频 */
+  }
+
+  .carousel-video {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+  }
+
+  .carousel-caption {
+    margin-top: 8px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    color: #ffffff; /* 为了在黑色背景上可见，如果你的页面是白底，可改回 #4a4a4a 并移除父容器的黑色背景 */
+    line-height: 1.5;
+  }
+
+  /* 悬浮按钮样式 */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let currentIndex = 0;
+    const items = document.querySelectorAll(".carousel-item");
+    const videos = document.querySelectorAll(".carousel-video");
+
+    // 全局切换视频函数
+    window.switchVideo = function(direction) {
+      // 1. 暂停当前视频并重置时间
+      videos[currentIndex].pause();
+      videos[currentIndex].currentTime = 0;
+      items[currentIndex].classList.remove("active");
+
+      // 2. 计算下一个视频的索引
+      currentIndex += direction;
+      
+      // 循环处理：如果到了最后一个，回到第一个；如果是在第一个往前按，跳到最后一个
+      if (currentIndex >= items.length) {
+        currentIndex = 0;
+      } else if (currentIndex < 0) {
+        currentIndex = items.length - 1;
+      }
+
+      // 3. 显示下一个视频并播放
+      items[currentIndex].classList.add("active");
+      // 使用 try-catch 防止现代浏览器的自动播放策略拦截
+      let playPromise = videos[currentIndex].play();
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.log("Auto-play was prevented by browser. User interaction needed.");
+        });
+      }
+    };
+
+    // 为每个视频绑定 "播放结束" 事件
+    videos.forEach((video) => {
+      video.addEventListener("ended", function() {
+        // 当视频正常播放完毕后，自动切换到下一个视频 (direction = 1)
+        switchVideo(1);
+      });
+    });
+  });
+</script>
  
 
 
@@ -687,8 +777,8 @@ Extensive experiments across multiple benchmarks demonstrate that PAS3R signific
       <div class="column is-8">
         <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          <p class="has-text-centered">
+            Design borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies.</a>
           </p>
 
         </div>
