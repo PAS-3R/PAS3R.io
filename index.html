@@ -758,6 +758,25 @@ Extensive experiments across multiple benchmarks demonstrate that PAS3R signific
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
-
+      <script>
+      // 强制将函数绑定到 window 对象，解决 "is not defined" 报错
+      window.handleComingSoon = function(btn) {
+        const textSpan = btn.querySelector('.btn-text');
+        if (!textSpan) return;
+    
+        if (textSpan.innerText === "Coming Soon") return;
+    
+        const originalText = textSpan.innerText;
+        textSpan.innerText = "Coming Soon";
+        btn.style.opacity = "0.6";
+        btn.style.pointerEvents = "none";
+    
+        setTimeout(() => {
+          textSpan.innerText = originalText;
+          btn.style.opacity = "1";
+          btn.style.pointerEvents = "auto";
+        }, 2000);
+      };
+    </script>
   </body>
   </html>
